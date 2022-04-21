@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Antonio", sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --planet-color: #419ebb;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #070724 url("https://d33wubrfki0l68.cloudfront.net/0e6393cc7a66c0b6011a9f0036f99d553a0a7a50/d3dfa/assets/background-stars.svg");
+}
+
+@media (min-width: 767px) {
+  header {
+    position: static !important;
+  }
+  header .planets {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+@media (max-width: 767px) {
+  .App .mainn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App .mainn .choose {
+    padding: 5px 20px !important;
+    -webkit-box-ordinal-group: -99;
+        -ms-flex-order: -100;
+            order: -100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: initial;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    max-width: 100%;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: row !important;
+            flex-flow: row !important;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.555);
+    width: 100% !important;
+  }
+  .App .mainn .choose button {
+    padding: 20px;
+    border: 0 !important;
+  }
+  .App .mainn .choose button:hover {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0px 5px 0px 0px var(--planet-color);
+            box-shadow: 0px 5px 0px 0px var(--planet-color);
+  }
+  .App .mainn .choose span {
+    display: none;
+  }
+  .App .mainn .about {
+    text-align: center;
+  }
+  .App .mainn div {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+  }
+  .App .mainn div .details {
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+  }
+  .App .mainn div .details > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 60px;
+  }
+  .App .mainn div .details > div div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .App .mainn div .details > div div p {
+    margin-top: 13px;
+  }
+  .App .mainn div .details > div div h6 {
+    margin-top: 5px;
+  }
+  .App header {
+    padding: 15px 20px !important;
+    -webkit-box-align: initial !important;
+        -ms-flex-align: initial !important;
+            align-items: initial !important;
+    position: initial;
+    width: 100%;
+    z-index: 2;
+    background: #070724 url("https://d33wubrfki0l68.cloudfront.net/0e6393cc7a66c0b6011a9f0036f99d553a0a7a50/d3dfa/assets/background-stars.svg");
+  }
+  .App header svg {
+    display: block !important;
+  }
+  .App header .planets {
+    gap: 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    background-color: #070724;
+    flex-direction: column !important;
+    top: 84px;
+    overflow: scroll;
+    width: 110%;
+    left: -1.5px;
+    height: 500px;
+    top: 68.5px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .App header .planets .planet {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .App header .planets .planet p {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+  }
+  .App header .planets .planet .ball {
+    display: block !important;
+  }
+  .App header .planets .planet img {
+    display: block !important;
+  }
+}
+.App header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.555);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.App header svg {
+  display: none;
+  fill: rgba(255, 255, 255, 0.568);
+}
+.App header .planets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  padding-bottom: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.App header .planets p {
+  color: rgba(255, 255, 255, 0.507);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-family: "Spartan", sans-serif;
+}
+.App header .planets p:hover {
+  color: white;
+}
+.App header .planets .planet {
+  padding: 30px auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.App header .planets .planet .ball {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+.App .mainn {
+  display: -ms-grid;
+  display: grid;
+  gap: 40px;
+  -ms-grid-columns: 1fr 40px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 2.5fr 40px 1.1fr 40px 0.5fr;
+  grid-template-rows: 2.5fr 1.1fr 0.5fr;
+      grid-template-areas: "position1 position1" "position2 position3" "position4 position4";
+}
+.App .mainn > * {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.App .mainn .figure {
+  position: relative;
+}
+.App .mainn .choose {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.App .mainn .choose button {
+  padding-left: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: transparent;
+  border: 0.1px solid rgba(255, 255, 255, 0.493);
+  text-align: left;
+  letter-spacing: 2px;
+  font-family: "Spartan", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.582);
+}
+.App .mainn .choose button span {
+  color: rgba(255, 255, 255, 0.582) !important;
+  margin-right: 30px;
+  font-size: 11px;
+}
+.App .mainn .choose button:hover {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mainn :nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: position1 !important;
+}
+
+.mainn :nth-child(2) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: position2 !important;
+}
+
+.mainn :nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: position3 !important;
+}
+
+.mainn :nth-child(4) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: position4 !important;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+.details > div {
+  width: 24.3%;
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.432);
+  padding: 10px 15px;
+}
+.details > div p {
+  color: #7a7a89;
+  font-size: 10px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.details > div h6 {
+  margin: 0;
+  font-size: 22.5px;
+}
+
+.valid {
+  color: white !important;
+}
+@media (min-width: 767px) {
+  .valid {
+    background-color: var(--planet-color) !important;
+    color: white !important;
+  }
+}
+@media (max-width: 767px) {
+  .valid {
+    -webkit-box-shadow: 0px 5px 0px 0px var(--planet-color) !important;
+            box-shadow: 0px 5px 0px 0px var(--planet-color) !important;
+    color: white !important;
+  }
+}

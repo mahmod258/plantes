@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/plantes/static/css/main.299e1444.css",
+    "main.js": "/plantes/static/js/main.46ed49eb.js",
+    "index.html": "/plantes/index.html",
+    "main.299e1444.css.map": "/plantes/static/css/main.299e1444.css.map",
+    "main.46ed49eb.js.map": "/plantes/static/js/main.46ed49eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.299e1444.css",
+    "static/js/main.46ed49eb.js"
+  ]
+}
